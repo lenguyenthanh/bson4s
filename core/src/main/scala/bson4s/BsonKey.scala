@@ -1,5 +1,5 @@
 /*
- * Copyright 2024 thanh
+ * Copyright 2020 Kirill5k
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,12 +14,8 @@
  * limitations under the License.
  */
 
-package se.thanh.bson4s
+package mongo4cats.derivation.bson
 
-import cats.effect.IO
-import cats.effect.IOApp
+import scala.annotation.StaticAnnotation
 
-object Main extends IOApp.Simple:
-
-  def run: IO[Unit] =
-    IO.println("Hello sbt-typelevel!")
+final case class BsonKey(value: String) extends StaticAnnotation

@@ -29,7 +29,8 @@ lazy val core = crossProject(JVMPlatform, JSPlatform)
     name := "bson4s",
     libraryDependencies ++= Seq(
       "org.typelevel" %%% "cats-core"   % "2.11.0",
-      "org.typelevel" %%% "cats-effect" % "3.5.4"
+      "org.typelevel" %%% "cats-effect" % "3.5.4",
+      "org.mongodb"     % "bson"        % "5.1.1"
     )
   )
 
