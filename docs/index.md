@@ -11,3 +11,9 @@ libraryDependencies ++= Seq(
   "se.thanh" %% "bson4s" % "@VERSION@"
 )
 ```
+
+## inspiration
+
+- https://github.com/mongodb-haskell/bson
+- https://github.com/SystemFw/dynosaur
+- https://github.com/Kirill5k/mongo4cats/pull/19
